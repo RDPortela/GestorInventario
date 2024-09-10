@@ -77,6 +77,7 @@ EXCEPTION
 END;
 $$ LANGUAGE plpgsql;
 
+
 --Eliminamos el sp en caso de que cambien los parametros
 DROP PROCEDURE login_schema.crearusuario(character varying,character varying,character varying,character varying,character varying,character varying);
 
