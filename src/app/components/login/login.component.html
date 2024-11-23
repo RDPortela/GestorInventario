@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="login-body">
+        <div class="cabeceroLogin">
+            <i class="pi pi-box icono"></i>
+            <h1>Gestor Inventario</h1>
+        </div>
+        <div class="formularioLogin">
+            <form class="form-group">
+                <div [style]="'display: flex; flex-direction: column; gap: 0.5em;'">
+                    <label class="labelForm" for="usuario">Nombre de usuario</label>
+                    <p-iconField iconPosition="left">
+                        <p-inputIcon styleClass="pi pi-user" />
+                        <input class="inputForm" pInputText type="text" id="usuario" name="usuario"
+                            [placeholder]="'Ingrese su nombre de usuario'">
+                    </p-iconField>
+                </div>
+                <div [style]="'display: flex; flex-direction: column; gap: 0.5em;'">
+                    <label class="labelForm" for="contrasenia">Contraseña</label>
+                    <p-password class="inputForm" [(ngModel)]="valuePassword" [toggleMask]="true"
+                        [ngModelOptions]="{standalone: true}" icon="pi pi-lock" />
+                </div>
+                <div class="botonLogin">
+                    <button pButton type="submit" label="Iniciar sesión"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
